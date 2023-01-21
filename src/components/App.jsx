@@ -1,16 +1,36 @@
+import { Routes, Route } from 'react-router-dom';
+import { lazy } from 'react';
+import { GlobalStyle } from 'GlobalStyles';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchContacts } from 'redux/operation';
+import { Toaster } from 'react-hot-toast';
+import { Layout } from './Layout/Layout';
+
+const Contacts = lazy(() => import('pages/Contacts/Contacts'));
+const Register = lazy(() => import('pages/Register/Register'));
+const Login = lazy(() => import('pages/Login/Login'));
+
 export const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="contacts" element={<Contacts />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Route>
+      </Routes>
+
+      <Toaster />
+      <GlobalStyle />
+    </>
   );
 };
