@@ -1,11 +1,9 @@
 import { Box } from 'components/Box';
-import { Subtitle } from './Register.styled';
-import { RegisterForm } from 'components/RegisterForm/RegisterForm';
+import { RegisterForm } from 'components/user/RegisterForm/RegisterForm';
 
 const Register = () => {
   return (
     <Box>
-      <Subtitle>Register</Subtitle>
       <RegisterForm />
     </Box>
   );

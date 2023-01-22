@@ -3,8 +3,8 @@ import { Link } from './Auth.styled';
 export const Auth = () => {
   return (
     <div>
-      <Link to="/register">Register</Link>
-      <Link to="/">Login</Link>
+      <Link to="/register">Sign up</Link>
+      <Link to="/login">Sign in</Link>
     </div>
   );
 };

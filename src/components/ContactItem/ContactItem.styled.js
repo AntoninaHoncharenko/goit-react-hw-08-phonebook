@@ -10,6 +10,7 @@ export const ContactItem = styled.li`
   justify-content: space-between;
   border-radius: 8px;
   border: 1px solid #006600;
+  background-color: white;
 
   &:not(:last-child) {
     margin-bottom: 15px;

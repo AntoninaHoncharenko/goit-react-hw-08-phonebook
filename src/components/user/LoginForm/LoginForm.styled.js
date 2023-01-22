@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
   margin: 0 auto;
-  width: 250px;
+  width: 310px;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 30px;
 `;
 
 export const LoginLabel = styled.label`

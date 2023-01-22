@@ -16,7 +16,7 @@ const Contacts = () => {
       display="flex"
       justifyContent="space-around"
       margin="0 auto"
-      pt="20px"
+      pt="50px"
     >
       <Box>
         <Subtitle>Contacts</Subtitle>
