@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/operation';
+import { deleteContact } from 'redux/contacts/operation';
 import { ContactItem } from './ContactItem.styled';
 import { Box } from 'components/Box';
 import { ContactName, ContactNumber, DeleteBtn } from './ContactItem.styled';

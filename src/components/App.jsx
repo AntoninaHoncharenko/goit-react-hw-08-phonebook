@@ -3,7 +3,7 @@ import { lazy } from 'react';
 import { GlobalStyle } from 'GlobalStyles';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchContacts } from 'redux/operation';
+import { fetchContacts } from 'redux/contacts/operation';
 import { Toaster } from 'react-hot-toast';
 import { Layout } from './Layout/Layout';
 

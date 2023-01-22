@@ -4,7 +4,7 @@ import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Box } from 'components/Box';
 import { Subtitle } from './Contacts.styled';
 import { useSelector } from 'react-redux';
-import { selectLoading, selectError } from 'redux/selectors';
+import { selectLoading, selectError } from 'redux/contacts/selectors';
 
 const Contacts = () => {
   const isLoading = useSelector(selectLoading);

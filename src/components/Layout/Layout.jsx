@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { MdContactPhone } from 'react-icons/md';
-// import { UserMenu } from 'components/UserMenu/UserMenu';
+import { UserMenu } from 'components/user/UserMenu/UserMenu';
 import { Auth } from 'components/user/Auth/Auth';
 import { Header, Navigation, Link, HomeLink, HomeText } from './Layout.styled';
 import { Box } from 'components/Box';
@@ -17,7 +17,7 @@ export const Layout = () => {
           </HomeLink>
           <Link to="/contacts">Contacts</Link>
           <Auth />
-          {/* <UserMenu /> */}
+          <UserMenu />
         </Navigation>
       </Header>
       <Suspense fallback={null}>
