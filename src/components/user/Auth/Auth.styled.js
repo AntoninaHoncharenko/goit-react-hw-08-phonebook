@@ -18,6 +18,10 @@ export const LinkUp = styled(NavLink)`
   :focus {
     box-shadow: rgba(0, 51, 255, 0.7) 0px 5px 15px;
   }
+
+  &.active {
+    box-shadow: rgba(0, 51, 255, 0.7) 0px 5px 15px;
+  }
 `;
 
 export const LinkIn = styled(NavLink)`
@@ -37,6 +41,10 @@ export const LinkIn = styled(NavLink)`
 
   :hover,
   :focus {
+    box-shadow: rgba(0, 128, 0, 0.7) 0px 5px 15px;
+  }
+
+  &.active {
     box-shadow: rgba(0, 128, 0, 0.7) 0px 5px 15px;
   }
 `;

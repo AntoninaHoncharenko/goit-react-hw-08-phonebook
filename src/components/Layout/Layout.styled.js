@@ -53,8 +53,7 @@ export const HomeLink = styled(NavLink)`
     }
   }
 
-  :hover,
-  :focus {
+  :hover {
     animation-play-state: paused;
   }
 `;
