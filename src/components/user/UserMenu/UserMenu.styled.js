@@ -7,17 +7,20 @@ export const User = styled.p`
 `;
 
 export const LogOutBtn = styled.button`
-  width: 100px;
-  height: 45px;
-  margin: auto 0;
-  border: none;
-  border-radius: 6px;
-  font-size: 24px;
-  background-color: #ff8080;
-  transition: background-color 300ms linear;
+  width: 110px;
 
-  &:hover,
-  &:focus {
-    background-color: #ff4d4d;
+  font-size: 24px;
+  margin-right: 20px;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff0000, #ffff00);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  transition: box-shadow 250ms linear;
+
+  :hover,
+  :focus {
+    box-shadow: rgba(255, 0, 0, 0.7) 0px 5px 15px;
   }
 `;

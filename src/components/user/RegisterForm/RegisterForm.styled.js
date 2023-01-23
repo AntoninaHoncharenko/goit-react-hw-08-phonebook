@@ -39,11 +39,12 @@ export const RegisterBtn = styled.button`
   margin: 0 auto;
   border: none;
   font-size: 18px;
-  background-color: #98fb98;
+  background-color: #9400d3;
+  color: white;
   transition: background-color 300ms linear;
 
   &:hover,
   &:focus {
-    background-color: #90ee90;
+    background-color: #0033ff;
   }
 `;

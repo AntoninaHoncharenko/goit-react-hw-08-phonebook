@@ -39,11 +39,11 @@ export const LoginBtn = styled.button`
   margin: 0 auto;
   border: none;
   font-size: 18px;
-  background-color: #98fb98;
+  background-color: #b5ff44;
   transition: background-color 300ms linear;
 
   &:hover,
   &:focus {
-    background-color: #90ee90;
+    background-color: #32cd32;
   }
 `;
