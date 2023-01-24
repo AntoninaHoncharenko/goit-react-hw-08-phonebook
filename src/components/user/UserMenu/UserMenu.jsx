@@ -15,7 +15,7 @@ export const UserMenu = () => {
 
   return (
     <Box display="flex" justifyContent="flex-end" alignItems="center">
-      <User>{user.name}</User>
+      <User>Hi, {user.name}!</User>
       <LogOutBtn type="button" onClick={handleLogOut}>
         Log out
       </LogOutBtn>
