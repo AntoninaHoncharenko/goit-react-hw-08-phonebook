@@ -15,6 +15,7 @@ export const LogOutBtn = styled.button`
   border: none;
   padding: 6px 12px;
   border-radius: 30px;
+  cursor: pointer;
   background: linear-gradient(90deg, #ff0000, #ffff00);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   transition: box-shadow 250ms linear;

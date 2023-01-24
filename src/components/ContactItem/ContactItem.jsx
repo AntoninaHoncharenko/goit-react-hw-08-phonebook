@@ -15,7 +15,7 @@ export const Contact = ({ contact }) => {
     <ContactItem>
       <Box>
         <ContactName>{contact.name}</ContactName>
-        <ContactNumber>{contact.phone}</ContactNumber>
+        <ContactNumber>{contact.number}</ContactNumber>
       </Box>
       <DeleteBtn type="button" onClick={handleDelete}>
         Delete
@@ -27,6 +27,6 @@ export const Contact = ({ contact }) => {
 Contact.propTypes = {
   contact: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    phone: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
   }),
 };

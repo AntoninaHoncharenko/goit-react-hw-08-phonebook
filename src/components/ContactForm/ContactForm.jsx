@@ -21,7 +21,7 @@ export const ContactForm = () => {
         position: 'top-center',
       });
     } else {
-      dispatch(addContact({ name: addedName, phone: addedNumber }));
+      dispatch(addContact({ name: addedName, number: addedNumber }));
     }
 
     form.reset();
