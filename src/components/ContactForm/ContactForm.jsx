@@ -18,9 +18,26 @@ export const ContactForm = () => {
       toast.error(`${addedName} is already in contacts`, {
         duration: 3000,
         position: 'top-center',
+        style: {
+          width: '280px',
+          height: '60px',
+          fontSize: '18px',
+        },
       });
     } else {
-      dispatch(addContact({ name: addedName, number: addedNumber }));
+      dispatch(addContact({ name: addedName, number: addedNumber }))
+        .unwrap()
+        .then(() =>
+          toast.success('Contact is added', {
+            duration: 3000,
+            position: 'top-center',
+            style: {
+              width: '280px',
+              height: '60px',
+              fontSize: '18px',
+            },
+          })
+        );
     }
 
     form.reset();
