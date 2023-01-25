@@ -1,9 +1,20 @@
 import styled from 'styled-components';
 
+export const Form = styled.form`
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto 20px;
+  background-color: #f4f4f4;
+`;
+
 export const ContactLabel = styled.label`
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
 `;
 
@@ -19,7 +30,7 @@ export const ContactInput = styled.input`
 
   &:hover,
   &:focus {
-    border: 2px solid #006600;
+    border: 2px solid #008000;
   }
 `;
 
@@ -28,14 +39,14 @@ export const AddBtn = styled.button`
   height: 35px;
   padding: 3px 6px;
   border-radius: 4px;
-  margin: 0 auto;
+  margin: 8px auto 0px;
   border: none;
   font-size: 18px;
-  background-color: #98fb98;
+  background-color: #3cd03c;
   transition: background-color 300ms linear;
 
   &:hover,
   &:focus {
-    background-color: #90ee90;
+    background-color: #198d19;
   }
 `;

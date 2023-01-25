@@ -6,7 +6,7 @@ import { Auth } from 'components/user/Auth/Auth';
 import {
   Header,
   Navigation,
-  Link,
+  ContactLink,
   HomeLink,
   HomeText,
   Icon,
@@ -26,7 +26,7 @@ export const Layout = () => {
             <Icon size="38" />
             <HomeText>PhoneBook</HomeText>
           </HomeLink>
-          {isLoggedIn && <Link to="/contacts">Contacts</Link>}
+          {isLoggedIn && <ContactLink to="/contacts">Contacts</ContactLink>}
           {isLoggedIn ? <UserMenu /> : <Auth />}
         </Navigation>
       </Header>

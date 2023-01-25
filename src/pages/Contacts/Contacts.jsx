@@ -20,7 +20,7 @@ const Contacts = () => {
 
   return (
     <Box
-      width="700px"
+      width="900px"
       display="flex"
       justifyContent="space-around"
       margin="0 auto"

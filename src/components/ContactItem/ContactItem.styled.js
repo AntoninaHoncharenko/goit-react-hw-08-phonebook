@@ -9,7 +9,7 @@ export const ContactItem = styled.li`
   display: flex;
   justify-content: space-between;
   border-radius: 8px;
-  border: 1px solid #006600;
+  border: 1px solid black;
   background-color: white;
 
   &:not(:last-child) {
@@ -20,7 +20,7 @@ export const ContactItem = styled.li`
 export const ContactName = styled.p`
   font-size: 20px;
   margin-bottom: 5px;
-  color: #004d00;
+  color: #006600;
 `;
 
 export const ContactNumber = styled.p`
@@ -28,17 +28,17 @@ export const ContactNumber = styled.p`
 `;
 
 export const DeleteBtn = styled.button`
-  width: 90px;
-  height: 40px;
+  width: 80px;
+  height: 35px;
   margin: auto 0;
   border: none;
   border-radius: 6px;
   font-size: 18px;
-  background-color: #ff8080;
+  background-color: #ff4d4d;
   transition: background-color 300ms linear;
 
   &:hover,
   &:focus {
-    background-color: #ff4d4d;
+    background-color: #ff0000;
   }
 `;

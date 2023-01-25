@@ -2,8 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from 'redux/contacts/operation';
 import { selectContacts } from 'redux/contacts/selectors';
 import toast from 'react-hot-toast';
-import { Box } from '../Box';
-import { ContactLabel, ContactInput, AddBtn } from './ContactForm.styled';
+import { Form, ContactLabel, ContactInput, AddBtn } from './ContactForm.styled';
 
 export const ContactForm = () => {
   const contacts = useSelector(selectContacts);
@@ -28,14 +27,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <Box
-      onSubmit={handleSubmit}
-      as="form"
-      display="flex"
-      flexDirection="column"
-      width="100%"
-      m="0 auto 20px"
-    >
+    <Form onSubmit={handleSubmit}>
       <ContactLabel>
         Name
         <ContactInput
@@ -57,6 +49,6 @@ export const ContactForm = () => {
         />
       </ContactLabel>
       <AddBtn type="submit">Add contact</AddBtn>
-    </Box>
+    </Form>
   );
 };

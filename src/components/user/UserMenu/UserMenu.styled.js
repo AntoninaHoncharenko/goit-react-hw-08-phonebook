@@ -8,9 +8,7 @@ export const User = styled.p`
 
 export const LogOutBtn = styled.button`
   width: 110px;
-
   font-size: 24px;
-  margin-right: 20px;
   color: black;
   border: none;
   padding: 6px 12px;

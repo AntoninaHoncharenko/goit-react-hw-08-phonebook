@@ -6,6 +6,7 @@ export const Form = styled.form`
   border: 2px solid black;
   border-radius: 12px;
   padding: 30px;
+  background-color: #f4f4f4;
 `;
 
 export const RegisterLabel = styled.label`
@@ -27,7 +28,7 @@ export const RegisterInput = styled.input`
 
   &:hover,
   &:focus {
-    border: 2px solid #006600;
+    border: 2px solid #9400d3;
   }
 `;
 
@@ -36,7 +37,7 @@ export const RegisterBtn = styled.button`
   height: 35px;
   padding: 3px 6px;
   border-radius: 4px;
-  margin: 0 auto;
+  margin: 8px auto 0px;
   border: none;
   font-size: 18px;
   background-color: #9400d3;
