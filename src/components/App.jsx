@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Toaster } from 'react-hot-toast';
 import { Layout } from './Layout/Layout';
+import { NotFound } from './NotFound/NotFound';
 import { refreshUser } from 'redux/auth/operations';
 import { selectIsRefreshing } from 'redux/auth/selectors';
 import { RestrictedRoute } from 'RestrictedRoute';
@@ -56,8 +57,8 @@ export const App = () => {
                 />
               }
             />
-            {/* <Route path="*" element={<NotFound />} /> */}
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       )}
 
