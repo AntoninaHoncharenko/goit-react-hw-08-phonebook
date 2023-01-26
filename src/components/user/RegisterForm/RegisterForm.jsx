@@ -7,6 +7,7 @@ import {
   RegisterInput,
   RegisterBtn,
 } from './RegisterForm.styled';
+import { toast } from 'react-hot-toast';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,20 @@ export const RegisterForm = () => {
     const name = form.elements.username.value;
     const email = form.elements.email.value;
     const password = form.elements.password.value;
-    dispatch(register({ name, email, password }));
+    dispatch(register({ name, email, password }))
+      .unwrap()
+      .then()
+      .catch(() =>
+        toast.error('Account has already been registered at this email', {
+          duration: 4000,
+          position: 'top-center',
+          style: {
+            width: '280px',
+            height: '60px',
+            fontSize: '18px',
+          },
+        })
+      );
     form.reset();
   };
 
