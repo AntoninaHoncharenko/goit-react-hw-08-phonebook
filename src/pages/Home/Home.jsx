@@ -1,5 +1,4 @@
 import { HomeText, TextWrap } from './Home.styled';
-import { Box } from 'components/Box';
 
 const Home = () => {
   return (
