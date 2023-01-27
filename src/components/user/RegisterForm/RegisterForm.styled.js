@@ -2,22 +2,31 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
   margin: 0 auto;
-  width: 310px;
-  border: 2px solid black;
+  width: 280px;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
   background-color: #f4f4f4;
+
+  @media screen and (min-width: 768px) {
+    width: 310px;
+    padding: 30px;
+  }
 `;
 
 export const RegisterLabel = styled.label`
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 8px;
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const RegisterInput = styled.input`
-  width: 250px;
+  width: 100%;
   height: 30px;
   margin-top: 8px;
   padding: 3px 6px;
@@ -33,13 +42,13 @@ export const RegisterInput = styled.input`
 `;
 
 export const RegisterBtn = styled.button`
-  width: 250px;
+  width: 100%;
   height: 35px;
   padding: 3px 6px;
   border-radius: 4px;
   margin: 8px auto 0px;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #9400d3;
   color: white;
   transition: background-color 300ms linear;
@@ -47,5 +56,9 @@ export const RegisterBtn = styled.button`
   &:hover,
   &:focus {
     background-color: #0033ff;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
   }
 `;

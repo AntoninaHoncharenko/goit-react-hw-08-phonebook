@@ -11,11 +11,15 @@ export const Navigation = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 20px;
+  }
 `;
 
 export const ContactLink = styled(NavLink)`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   color: black;
   text-decoration: none;
@@ -25,12 +29,40 @@ export const ContactLink = styled(NavLink)`
   :focus {
     color: #0000cc;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const HomeLink = styled(NavLink)`
   text-decoration: none;
   display: flex;
   align-items: center;
+`;
+
+export const Icon = styled(MdContactPhone)`
+  color: #0000cc;
+  transition: color 250ms linear;
+
+  @media screen and (max-width: 767px) {
+    :hover,
+    :focus {
+      color: #2900cc;
+    }
+  } ;
+`;
+
+export const HomeText = styled.p`
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 6px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 
   background: linear-gradient(
     90deg,
@@ -60,15 +92,4 @@ export const HomeLink = styled(NavLink)`
   :hover {
     animation-play-state: paused;
   }
-`;
-
-export const Icon = styled(MdContactPhone)`
-  color: #0000cc;
-`;
-
-export const HomeText = styled.p`
-  font-size: 32px;
-  font-weight: 600;
-  margin-left: 6px;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;

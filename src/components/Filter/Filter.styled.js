@@ -18,6 +18,6 @@ export const FindInput = styled.input`
 
   &:hover,
   &:focus {
-    border: 2px solid #006600;
+    border: 2px solid #0000cc;
   }
 `;

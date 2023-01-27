@@ -1,11 +1,11 @@
-import { HomeText } from './Home.styled';
+import { HomeText, TextWrap } from './Home.styled';
 import { Box } from 'components/Box';
 
 const Home = () => {
   return (
-    <Box minHeight="calc(100vh - 75px)" display="flex" alignItems="center">
+    <TextWrap>
       <HomeText>Welcome to your PhoneBook</HomeText>
-    </Box>
+    </TextWrap>
   );
 };
 
