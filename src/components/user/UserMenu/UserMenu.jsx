@@ -1,5 +1,4 @@
-import { Box } from 'components/Box';
-import { User, LogOutBtn } from './UserMenu.styled';
+import { Container, User, LogOutBtn } from './UserMenu.styled';
 import { useSelector } from 'react-redux';
 import { selectUser } from 'redux/auth/selectors';
 import { useDispatch } from 'react-redux';
@@ -14,11 +13,11 @@ export const UserMenu = () => {
   };
 
   return (
-    <Box display="flex" alignItems="center">
+    <Container>
       <User>Hi, {user.name}!</User>
       <LogOutBtn type="button" onClick={handleLogOut}>
         Log out
       </LogOutBtn>
-    </Box>
+    </Container>
   );
 };

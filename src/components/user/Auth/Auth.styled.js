@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const Container = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+`;
+
 export const LinkUp = styled(NavLink)`
   width: 80px;
   display: block;
@@ -36,11 +42,19 @@ export const LinkIn = styled(NavLink)`
   display: block;
   text-align: center;
   font-size: 18px;
-  margin-right: 12px;
+
   color: black;
   text-decoration: none;
   padding: 8px 9px;
   border-radius: 30px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 12px;
+  }
 
   background: linear-gradient(90deg, #008000, #ffff00);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;

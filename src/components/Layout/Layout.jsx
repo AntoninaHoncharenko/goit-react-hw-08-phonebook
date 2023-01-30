@@ -22,10 +22,13 @@ export const Layout = () => {
     <Box padding="0px 20px" maxWidth="1280px" margin="0 auto">
       <Header>
         <Navigation>
-          <HomeLink to="/">
-            <Icon size="38" />
-            <HomeText>PhoneBook</HomeText>
-          </HomeLink>
+          {!isLoggedIn && (
+            <HomeLink to="/">
+              <Icon size="38" />
+              <HomeText>PhoneBook</HomeText>
+            </HomeLink>
+          )}
+
           {isLoggedIn && <ContactLink to="/contacts">Contacts</ContactLink>}
           {isLoggedIn ? <UserMenu /> : <Auth />}
         </Navigation>

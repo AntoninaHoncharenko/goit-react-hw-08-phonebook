@@ -1,13 +1,12 @@
-import { LinkUp, LinkIn } from './Auth.styled';
-import { Box } from 'components/Box';
+import { Container, LinkUp, LinkIn } from './Auth.styled';
 
 export const Auth = () => {
   return (
     <div>
-      <Box display="flex">
+      <Container>
         <LinkIn to="/login">Sign in</LinkIn>
         <LinkUp to="/register">Sign up</LinkUp>
-      </Box>
+      </Container>
     </div>
   );
 };

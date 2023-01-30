@@ -1,13 +1,21 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+`;
+
 export const User = styled.p`
-  display: none;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 4px;
 
   @media screen and (min-width: 768px) {
-    display: block;
-    font-size: 24px;
-    color: black;
     margin-right: 15px;
+    font-size: 24px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -18,6 +26,12 @@ export const LogOutBtn = styled.button`
   border: none;
   padding: 8px 9px;
   border-radius: 30px;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+  }
+
   cursor: pointer;
   background: linear-gradient(90deg, #ff0000, #ffff00);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
