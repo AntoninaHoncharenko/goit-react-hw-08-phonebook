@@ -19,6 +19,10 @@ export const Navigation = styled.nav`
 `;
 
 export const ContactLink = styled(NavLink)`
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+  }
+
   font-size: 24px;
   font-weight: 600;
   color: black;
@@ -27,6 +31,10 @@ export const ContactLink = styled(NavLink)`
 
   :hover,
   :focus {
+    color: #0000cc;
+  }
+
+  &.active {
     color: #0000cc;
   }
 
@@ -42,20 +50,18 @@ export const HomeLink = styled(NavLink)`
 `;
 
 export const Icon = styled(MdContactPhone)`
-  /* color: #0000cc;
-  transition: color 250ms linear; */
-  display: none;
+  color: #0000cc;
+  transition: color 250ms linear;
+  margin-right: 12px;
 
   @media screen and (min-width: 768px) {
-    display: block;
-    color: #0000cc;
-    transition: color 250ms linear;
+    margin-right: 6px;
+  }
 
-    :hover,
-    :focus {
-      color: #2900cc;
-    }
-  } ;
+  :hover,
+  :focus {
+    color: #2900cc;
+  }
 `;
 
 export const HomeText = styled.p`
@@ -65,7 +71,6 @@ export const HomeText = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 32px;
-    margin-left: 6px;
   }
 
   background: linear-gradient(
