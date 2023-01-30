@@ -85,7 +85,7 @@ export const HomeText = styled.p`
   );
 
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
   background-size: 400%;
   animation: animate 10s linear infinite;
 
