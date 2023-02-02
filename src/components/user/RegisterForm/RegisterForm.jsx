@@ -18,6 +18,20 @@ export const RegisterForm = () => {
     const name = form.elements.username.value;
     const email = form.elements.email.value;
     const password = form.elements.password.value;
+
+    if (email === '' || password === '' || email === '') {
+      toast.error('Please, fill all fields', {
+        duration: 4000,
+        position: 'top-center',
+        style: {
+          width: '280px',
+          height: '60px',
+          fontSize: '18px',
+        },
+      });
+      return;
+    }
+
     dispatch(register({ name, email, password }))
       .unwrap()
       .then()
