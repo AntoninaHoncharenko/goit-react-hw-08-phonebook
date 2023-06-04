@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
-// import { MdContactPhone } from 'react-icons/md';
 import { useMedia } from 'react-use';
 import { UserMenu } from 'components/user/UserMenu/UserMenu';
 import { Auth } from 'components/user/Auth/Auth';
